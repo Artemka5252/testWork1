@@ -133,6 +133,8 @@ padding-left: 200px;
   object-fit: cover;
 }
 .product-box {
+  display: flex;
+  flex-wrap: wrap;
     background-color: rgba(40, 40, 41, 1);
 padding-top: 99px;
 color: white;
@@ -155,25 +157,24 @@ color: white;
   font-size: 16px;
 }
 .product-content-img{
-    width: 500px;
+    width: 450px;
     height: 550px;
 }
 
 .product-form-box{
-  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
   padding-top: 100px;
-  padding-left: 162px;
-  padding-right: 162px;
   height: 100%;
   width: 100%;
   background-color: rgba(40, 40, 41, 1);
 }
 .product-form {
+  padding-left: 50px;
   border-radius: 16px;
   background-color: white;
   max-width: 1600px;
-  padding-left: 130px;
-  height: 628px;
+  height: 630px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -209,22 +210,25 @@ color: white;
   font-weight: bold;
 }
 .form-build{
+  width: 618px;
 display: flex;
 }
 
 .footer {
   background-color: #1b1b1b;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 30px;
   color: #fff;
-  padding: 60px 40px;
   font-family: Arial, sans-serif;
 }
 
 
 .footer-top {
   display: flex;
-  border-top: 1px solid #444;
+  border-top: 2px solid #444;
   justify-content: center;
-  border-bottom: 1px solid #444;
+  border-bottom: 2px solid #444;
   padding-bottom: 20px;
 }
 
@@ -363,6 +367,10 @@ display: flex;
   .menu {
     padding-left: 100px;
   }
+  .form-build{
+    width: 425px;
+    height: 630px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -374,6 +382,35 @@ display: flex;
     padding-left: 20px;
     flex-direction: column;
     gap: 10px;
+  }
+  .product-form-box {
+    padding: 60px 20px;
+  }
+
+  .product-form {
+    padding: 20px;
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .form-build {
+    display: none;
+  }
+
+  .product-form h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .product-form input {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .form-product-button {
+    width: 100%;
+    margin-top: 30px;
   }
 
   .footer-bottom {
@@ -423,10 +460,20 @@ display: flex;
   .form-product-button {
     width: 100%;
   }
+  .product-form-box {
+    padding: 40px 16px;
+  }
 
+  .product-form h2 {
+    font-size: 18px;
+  }
+
+  .form-product-button {
+    font-size: 14px;
+    padding: 14px 20px;
+  }
   .product-form {
-    padding: 30px;
-    height: auto;
+    padding: 16px;
   }
 
   .product-form input {
