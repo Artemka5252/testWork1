@@ -134,6 +134,7 @@ padding-left: 200px;
 }
 .product-box {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
     background-color: rgba(40, 40, 41, 1);
 padding-top: 99px;
